@@ -25,7 +25,7 @@ development:
 test:
   <<: *default
   adapter: mysql2
-  database: spreejoy_development
+  database: spreejoy_test
   encoding: utf8
   username: root
   password: root
@@ -34,4 +34,10 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2
+  database: spreejoy_production
+  encoding: utf8
+  username: root
+  password: root
+  host: localhost
+  port: 3306
