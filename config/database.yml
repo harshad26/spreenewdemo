@@ -26,7 +26,7 @@ test:
   <<: *default
   adapter: postgresql
   database: spreejoy_test
-  encoding: utf8
+  encoding: unicode
   username: root
   password: root
   host: localhost
@@ -35,7 +35,7 @@ production:
   <<: *default
   adapter: postgresql
   database: spreejoy_production
-  encoding: utf8
+  encoding: unicode
   username: root
   password: root
   host: localhost
